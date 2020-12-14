@@ -237,10 +237,10 @@ Book5-确定项目的前景和范围
 2. 为什么需要目标？
    1. 业务需求？
       1. 不够严谨
-      2. 无法形成方法学支持(建模)
+      2. 无法形成**方法学支持**(建模)
    2. 面向目标的方法
       1. 将"目标"严格定义:单位、组织方式->目标模型
-      2. 建立方法学支持:模型的建立与应用
+      2. 建立**方法学支持**:模型的建立与应用
 
 ![](img/book5/18.png)
 
@@ -351,10 +351,13 @@ Goal Achieve[CommodityOutofDateNoticed]
 1. 多个目标之间关系
 2. Support链接表示一个目标对其他目标的支持作用，支持关系可以被处理为OR精化关系
 3. Conflict链接表示一个目标的实现对其他目标的实现有阻碍作用
-4. ++(Make)：一个目标的成功可以直接保证另一个目标的成功；
-5. +(Help)：一个目标的成功可以让另一个目标更容易成功
-6. －(Hurt)：一个目标的成功会使得另一个目标的成功更加困难；
-7. ― ―(Break)：一个目标的成功会直接导致另一个目标的失败。
+
+| 符号 | 解释  | 描述                                         |
+| ---- | ----- | -------------------------------------------- |
+| ++   | Make  | 一个目标的成功可以直接保证另一个目标的成功   |
+| +    | Help  | 一个目标的成功可以让另一个目标更容易成功     |
+| -    | Hurt  | 一个目标的成功会使得另一个目标的成功更加困难 |
+| --   | Break | 一个目标的成功会直接导致另一个目标的失败     |
 
 ![](img/book5/23.png)
 
@@ -403,13 +406,12 @@ Goal Achieve[CommodityOutofDateNoticed]
 4. 目标实现：收集与目标相关的需求信息，讨论可能的候选解决方案，确定最终的系统详细需求和解决方案
 
 ### 7.18.1. 高层目标的获取
-1. the highest level goal that can be ascribed to an enterprise is the wish to survive
-2. 现状和背景的分析：问题与缺陷
-   1. Achieve goal && Maintain goal
-3. Identifying maintain goal
-   1. The enterprise norms are maintained by regulating its relationships with other enterprises in its environment. 
-      1. Maintain relationships with customers, with suppliers, employees, with investors etc.
- 
+1. 可以归因于企业的最高目标是生存的愿望
+2. 现状和背景的分析：问题与缺陷，需要实现的目标和保持的目标
+3. 实现保持目标
+   1. 通过规范与环境中其他企业的关系来维护企业规范。
+   2. 与客户，供应商，员工，投资者等保持关系。
+
 ### 7.18.2. 面向目标的方法
 1. ×××连锁商店是一家刚刚发展起来的小型连锁商店，其前身是一家独立的小百货门面店。原商店只有销售的收银部分使用软件处理，其他业务都是手工作业，这已经不能适应它的业务发展要求。首先是随着商店规模的扩大，顾客量大幅增长，手工作业销售迟缓，顾客购物排队现象严重，导致流失客源。其次是商店的商品品种增多，无法准确掌握库存，商品积压、缺货和报废的现象上升明显。再次是商店面临的竞争比以前更大，希望在降低成本，吸引顾客，增强竞争力的同时，保持盈利水平。
 
@@ -479,7 +481,7 @@ Goal Achieve[CommodityOutofDateNoticed]
 ![](img/book5/37.png)
 
 ### 7.18.5. 目标精化的结束条件
-1. 子目标展开到单一**事务**时终止
+1. 子目标展开到**单一事务**时终止
    1. Agents与System的一次协作活动
    2. 连续活动，要求全部成功（要么全部失败）
    3. 确认这些单一事务能够增加业务价值
@@ -501,8 +503,8 @@ Goal Achieve[CommodityOutofDateNoticed]
 # 8. 为隆中对构建目标模型与分析
 
 # 9. 基于目标模型获取非功能需求——NFR(Non-Functional Requirements)
-1. No adequate methods are provided：Functional analysis or object-oriented analysis are limited as soon as nonfunctional concerns are regarded
-2. NFRs are difficult to express. Reasons:
+1. 没有提供足够的方法：一旦考虑到非功能性问题，就会限制功能分析或面向对象的分析
+2. NFR很难表达。原因：
    1. 非功能需求不集中，在系统中散布，难以界定它们的边界，也就难以描述和处理
    2. 非功能需求不独立，依赖于功能需求，处理非功能需求时很难脱离功能需求进行独立考虑
    3. 作为非功能需求主体的质量需求比较复杂，需要被分解为特征-子特征的层次结构
@@ -584,8 +586,7 @@ Goal Achieve[CommodityOutofDateNoticed]
 ![](img/book5/53.png)
 
 ## 10.2. 建立活动图
-1. 确定活动图的上下文环境 
-   1. 界定业务流程的处理界限 
+1. 确定活动图的上下文环境：界定业务流程的处理界限 
 2. 分析业务流程中的主要处理步骤 
 3. 分析业务流程中的主要数据流 
 4. 识别参与者，进行职责分配，将业务流程的处理步骤划分到不同的泳道，并将处理步骤和数据流的传递组织起来，建立活动图 
@@ -603,9 +604,9 @@ Goal Achieve[CommodityOutofDateNoticed]
 | ![](img/book5/58.png) | ![](img/book5/59.png) |
 | ![](img/book5/60.png) |                       |
 
-## 10.3. Activity Diagram And Goal
-1. Activities are behaviors and so they should be described as goals
-2. Actors(Partition) of actions are agents of goals
+## 10.3. 活动图和目标
+1. 活动是行为，因此应将其描述为目标
+2. 行动的参与者（分区）是目标的代理人
 
 ![](img/book5/61.png)
 
@@ -658,7 +659,7 @@ Goal Achieve[CommodityOutofDateNoticed]
 ## 14.1. 描述业务需求，描述解决方案
 1. IT部门经理在部门会议上说道：“我有一些好消息，也有一些坏消息。好消息是公司高层今天早晨已经批准了‘工资管理系统项目’。新系统要减少文书工作的时间和错误，提升工资管理部门的士气，避免可能的违约漏洞与损失。坏消息是为满足新的国家法律报表要求系统必须在12月底前完成，成本要控制在预算之内，新系统要能够与已有系统交互，并且财务经理坚持要审查最终的设计方案。”
 
-## 思考
+## 14.2. 思考
 1. 为什么要界定系统边界？系统与环境互动的界限，明确系统需要满足的与外界的交互行为，从而从宏观上界定了系统的功能概要。需求分析逐一细化系统边界中的对外交互行为的活动
 2. 为什么结构化分析与面向对象都要从系统边界开始？
 3. 你被任命为替换学生财务资助项目的项目经理。你想开发一个工作陈述来定义范围并降低范围蔓延的风险。
